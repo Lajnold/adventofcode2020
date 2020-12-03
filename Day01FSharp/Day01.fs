@@ -12,8 +12,8 @@ let part2 (numbers: int list): int =
     let indexed = List.indexed numbers
     let pairs =
         Seq.allPairs indexed indexed
-        |> Seq.filter (fun ab -> (fst (fst ab)) < (fst (snd ab)))
-        |> Seq.map (fun ab -> (snd (fst ab)), snd (snd (ab)))
+        |> Seq.filter (fun (ia, ib) -> (fst ia) < (fst ib))
+        |> Seq.map (fun (ia, ib) -> (snd ia), (snd ib))
     let (a, b) = Seq.find (fun (a, b) -> set.Contains (2020 - a - b)) pairs
     a * b * (2020 - a - b)
 
