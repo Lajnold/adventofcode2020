@@ -19,7 +19,7 @@ let part2 (numbers: int list): int =
 
 [<EntryPoint>]
 let main argv =
-    let numbers = File.ReadAllText("day01.txt").Trim().Split() |> Seq.map Int32.Parse |> List.ofSeq
+    let numbers = File.ReadAllLines "day01.txt" |> Seq.map Int32.Parse |> List.ofSeq
     printfn "Part 1: %d" (part1 numbers)
     printfn "Part 2: %d" (part2 numbers)
     0
