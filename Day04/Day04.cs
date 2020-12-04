@@ -35,7 +35,7 @@ bool ValidateField(string name, string value)
 		case "hcl":
 			return value.Length == 7
 				&& value.StartsWith("#")
-				&& value.Substring(1).All(c => (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f'));
+				&& value[1..].All(c => (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f'));
 		case "ecl":
 			var validEyeColors = new[] { "amb", "blu", "brn", "gry", "grn", "hzl", "oth" };
 			return validEyeColors.Contains(value);
