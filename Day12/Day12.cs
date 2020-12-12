@@ -84,25 +84,6 @@ void Part2()
                 switch (n)
                 {
                     case 90:
-                        if (wpx >= 0 && wpy >= 0)
-                        {
-                            var swap = wpx;
-                            wpx = -wpy;
-                            wpy = swap;
-                        }
-                        else if (wpx >= 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = -wpy;
-                            wpy = swap;
-                        }
-                        else if (wpx < 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = -wpy;
-                            wpy = swap;
-                        }
-                        else
                         {
                             var swap = wpx;
                             wpx = -wpy;
@@ -114,25 +95,6 @@ void Part2()
                         wpy = -wpy;
                         break;
                     case 270:
-                        if (wpx >= 0 && wpy >= 0)
-                        {
-                            var swap = wpx;
-                            wpx = wpy;
-                            wpy = -swap;
-                        }
-                        else if (wpx >= 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = wpy;
-                            wpy = -swap;
-                        }
-                        else if (wpx < 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = wpy;
-                            wpy = -swap;
-                        }
-                        else
                         {
                             var swap = wpx;
                             wpx = wpy;
@@ -145,25 +107,6 @@ void Part2()
                 switch (n)
                 {
                     case 90:
-                        if (wpx >= 0 && wpy >= 0)
-                        {
-                            var swap = wpx;
-                            wpx = wpy;
-                            wpy = -swap;
-                        }
-                        else if (wpx >= 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = wpy;
-                            wpy = -swap;
-                        }
-                        else if (wpx < 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = wpy;
-                            wpy = -swap;
-                        }
-                        else
                         {
                             var swap = wpx;
                             wpx = wpy;
@@ -175,25 +118,6 @@ void Part2()
                         wpy = -wpy;
                         break;
                     case 270:
-                        if (wpx >= 0 && wpy >= 0)
-                        {
-                            var swap = wpx;
-                            wpx = -wpy;
-                            wpy = swap;
-                        }
-                        else if (wpx >= 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = -wpy;
-                            wpy = swap;
-                        }
-                        else if (wpx < 0 && wpy < 0)
-                        {
-                            var swap = wpx;
-                            wpx = -wpy;
-                            wpy = swap;
-                        }
-                        else
                         {
                             var swap = wpx;
                             wpx = -wpy;
