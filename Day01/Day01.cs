@@ -2,7 +2,7 @@
 using System.IO;
 using System.Linq;
 
-var lines = File.ReadAllText("day01.txt").Trim().Split();
+var lines = File.ReadLines("day01.txt");
 var numbers = lines.Select(int.Parse).OrderBy(x => x).ToList();
 
 void Part1()
